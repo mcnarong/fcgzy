@@ -1,1 +1,368 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #307561;
+}
+body {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #333;
+    line-height: 1.5;
+}
+.clearfix:after{
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.wrap{
+	width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+}
+.header .logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: normal;
+}
+.header .nav{
+    float: right;
+    margin-top: 20px;
+}
+.header .nav_li{
+    float: left;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+.header .nav_li a{
+    display: block;
+    padding: 0 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.header .current a,
+.header .nav_li a:hover{
+    background-color: #ef261c;
+    color: #fff;
+}
+.banner{
+    font-size: 0;
+}
+
+
+.col_bar{
+    margin: 20px;
+}
+.col_bar_hd{
+    line-height: 40px;
+    text-align: center;
+}
+
+.col_bar_hd .line{
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #01224d;
+}
+.col_bar_hd .title{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 5px 3px;
+    font-weight: bold;
+    color: #01224d;
+}
+.intro_bar img{
+    float: left;
+    margin: 10px 20px 5px 0;
+}
+.intro_bar .txt{
+    float: left;
+}
+.intro_bar .txt p{
+    padding: 8px;
+    border-bottom: 1px dashed #dedede;
+}
+.intro_bar .txt .topic{
+    font-size: 20px;
+    border-bottom: 0;
+}
+.intro_bar .txt span{
+    font-weight: bold;
+    color: #777;
+}
+.intro_bar .btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ef261c;
+
+}
+.intro_bar .col_bar_bd .title{
+    margin: 40px 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.info_bar{
+    padding: 0 20px 20px;
+}
+.info_bar p{
+    margin: 10px 0;
+    text-indent: 2em;
+}
+.info_bar video{
+    display: block;
+    margin: 20px auto;
+}
+.pic_ul{
+    margin: 10px 0;
+}
+.pic_li{
+    float: left;
+    margin: 10px;
+    width: 270px;
+    overflow: hidden;
+}
+.pic_title{
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+}
+.pic_txt{
+    margin: 10px;
+}
+
+
+.footer {
+	clear: both;
+    padding: 30px 0 10px;
+	background: #01224d;
+	/* height: 50px; */
+	/* line-height: 50px; */
+	text-align: center;
+	color: #ddd;
+}
+.more_links{
+    margin-bottom: 20px;
+}
+.more_links .title{
+    margin-right: 30px;
+    font-size: 20px;
+    color: #ddd;
+}
+.more_links a{
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+.more_links a:hover{
+    color: #ffcc66;
+}
+
+/* 经典菜品页面 */
+.food_bar .pic_li{
+    height: 372px;
+    background-color: #d3d2d0;
+}
+.food_bar .pic_txt{
+    height: 165px;
+}
+.food_bar .pic_title{
+    text-align: center;
+}
+.comment_bar .pic_li{
+    margin: 9px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    height: auto;
+}
+.comment_bar .pic_txt{
+    margin: 0 8px;
+    height: 115px;
+}
+.comment_bar .pic_auth{
+    margin: 5px 0 0;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #777;
+    background: url('../images/icon_auth.png') no-repeat 0 0;
+}
+
+/* 菜品评论页 */
+.page_comment .pic_li{
+    float: none;
+    margin: 30px 20px;
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+}
+.page_comment .pic_icon{
+    float: left;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: url('../images/icon.png') no-repeat -2px -3px;
+}
+.page_comment .icon_1{
+    background-position: -201px -3px;
+
+}
+.page_comment .icon_2{
+    background-position: -2px -65px;
+
+}
+.page_comment .icon_3{
+    background-position: -268px -3px;
+
+}
+.page_comment .pic_info{
+    float: left;
+    padding-bottom: 20px;
+}
+.page_comment .pic_txt{
+    margin: 0;
+}
+.page_comment .pic_txt p{
+    margin-bottom: 10px;
+}
+.page_comment .pic_auth{
+    font-size: 16px;
+    color: #01224d;
+}
+.page_comment .pic_time{
+    color: #777;
+}
+.page_comment .pic_img{
+    display: inline-block;
+    margin-right: 10px;
+    width: 200px;
+}
+/* 页码 */	
+.col_page{
+    text-align:center;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Tahoma","微软雅黑"; 
+}
+.col_page a,
+.col_page .pnBtn{
+    padding:4px 11px 5px 10px;
+    margin:0 3px 5px;
+    border: 1px solid #7b7b7b; background:#fff;
+    display:inline-block;
+    color:#333;
+}
+.col_page span{
+    padding:4px 11px 5px 10px; 
+    margin:0 3px 5px;  
+    display:inline-block; 
+}
+.col_page a:hover{ 
+    color:#ef261c; 
+    text-decoration:none;
+    border: 1px solid #ef261c; 
+}
+.col_page .current{ 
+    border: 1px solid #ef261c; 
+    background: #ef261c; 
+    color:#fff; 
+}
+.col_page .disable,
+.col_page .disable:hover{ 
+    color:#dedede; 
+    border: 1px solid #dedede;
+    cursor: default;
+}
+.col_page .ellipsis{
+    color: #333;
+}
+
+/* 菜系特色页面 */
+.page_feature .col_bar .title{
+    padding: 3px 15px;
+    border-bottom: 2px solid #01224d;
+}
+.txt_ul{
+    margin: 10px auto;
+    width: 1120px;
+}
+.txt_ul .txt_li{
+    float: left;
+    width: 320px;
+    height: 105px;
+    margin: 10px 15px;
+    background-color: #f6f6f6;
+}
+.txt_ul .txt_li .cont{
+    padding: 10px 20px;
+}
+.qc_txt_bar .txt_ul{
+    width: 1060px;
+}
+.qc_txt_bar .txt_ul .txt_li{
+    width: 500px;
+    height: 80px;
+}
+
+/* 在线交流页面 */
+.page_form{
+    position: relative;
+}
+.page_form .side_img{
+    position: absolute;
+    right: 100px;
+    top: 0;
+}
+
+
+/* js轮播图 */
+.switch_bar{margin: 0 0 20px 0;}
+.switch_carousel{position:relative;width: 1200px;padding:10px 0;}
+.switch_carousel .content{position:relative;overflow:hidden;width: 1146px;height:187px;margin:0 auto;}
+.switch_carousel .js_switch_ct{position:absolute;white-space:nowrap;}
+.switch_carousel .js_switch_ct li{width:279px;height:187px; margin:0 10px 0 0;background-color:#ffcc66;}
+.switch_carousel .js_active{background-position:0 0;} 
+.switch_carousel .js_switch_prev,
+.switch_carousel .js_switch_next,
+.switch_carousel .js_switch_off{position:absolute;top:50px;}
+.switch_carousel .js_switch_prev,
+.switch_carousel .js_switch_prev.js_switch_off{left:0;}
+.switch_carousel .js_switch_next,
+.switch_carousel .js_switch_next.js_switch_off{right:0;}
+.switch_carousel .js_switch_prev a,
+.switch_carousel .js_switch_next a{
+    display: block;
+    color: #fff;font-size: 20px;
+    width: 26px;height: 100px;background-color: #f0b6b3;line-height: 100px;text-align: center;
+}
+.switch_carousel .js_switch_off a{
+    background-color: #eee;
+    cursor: auto;
+}
+
 
