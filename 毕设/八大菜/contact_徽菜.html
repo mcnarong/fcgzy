@@ -108,5 +108,38 @@
                 <p>南荣-violet-WXM版权所有 @mc_narong_2025.com</p>
             </div>
         </div>
+        <script>
+            // 提交按钮功能
+            document.getElementById('button').onclick = function() {
+                // 获取表单数据
+                const form = document.forms[0];
+                const data = {
+                    username: form.username.value,
+                    email: form.email.value,
+                    foodName: form.foodName.value,
+                    foodImg: form.foodImg.files[0] ? form.foodImg.files[0].name : '未选择',
+                    info: form.info.value
+                };
+                
+                // 简单验证
+                if(!data.username || !data.email || !data.foodName || !form.foodImg.files[0] || !data.info) {
+                    alert('请填写所有必填字段！');
+                    return;
+                }
+                
+                // 显示提交数据
+                alert(`提交成功！\n\n昵称: ${data.username}\n邮箱: ${data.email}\n菜品: ${data.foodName}\n图片: ${data.foodImg}\n评价: ${data.info.substring(0, 50)}...`);
+                
+                // 控制台打印数据（按F12可查看）
+                console.log('表单数据:', data);
+            };
+        </script>
+        <!-- 在</body>标签前添加这个脚本 -->
+<script>
+    document.getElementById('button2').onclick = function() {
+        document.forms[0].reset(); // 重置页面第一个表单
+        document.getElementById('foodimg').value = ''; // 清空文件选择
+    };
+</script>
     </body>
 </html>
